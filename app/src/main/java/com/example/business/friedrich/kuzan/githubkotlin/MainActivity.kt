@@ -5,6 +5,7 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
+    val mRectangle: Rectangle = Rectangle(12.6f, 30.3f)
     lateinit var mSquare: Square
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,5 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         mSquare = Square(12.5f)
+        println(mRectangle.mArea)
     }
 }
