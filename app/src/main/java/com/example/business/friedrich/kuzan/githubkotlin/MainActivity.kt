@@ -10,7 +10,9 @@ class MainActivity : AppCompatActivity() {
     val mCircle = Circle(41.4)
     val mMathematician = Mathematician("Pythagoras", 35)
     val mRectangle: Rectangle = Rectangle(12.6f, 30.3f)
+
     lateinit var mSquare: Square
+    lateinit var mWhite: White
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,5 +25,9 @@ class MainActivity : AppCompatActivity() {
         mMathematician.increment()
         Toast.makeText(this, mMathematician.mName, Toast.LENGTH_LONG).show()
         Log.d("TAG", "${mMathematician.mName} ${mMathematician.mAge}")
+
+        println(mWhite.strColor())
+        mWhite.strPrint()
+        mWhite.strLog()
     }
 }
