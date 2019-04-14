@@ -5,8 +5,12 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var mSquare: Square
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        mSquare = Square(12.5f)
     }
 }
